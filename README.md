@@ -1,6 +1,6 @@
 # quicksum
 
-<img src="./src/popup/assets/logo-animated.svg"/>
+<img src="./logo-512x512.png"/>
 
 _Quick article summarization with text fragmentation._
 
