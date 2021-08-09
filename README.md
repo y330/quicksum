@@ -1,5 +1,7 @@
 # quicksum
 
+## Copyright (c) 2021 Yonah Aviv
+
 <img src="./logo-512x512.png"/>
 
 _Quick article summarization with text fragmentation._
@@ -13,7 +15,16 @@ _Quick article summarization with text fragmentation._
 
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Paste an article URL or a body of text, and we will generate a summary for you, clean and simple. For the curious, we also map out each part of the summary to it's original place in the article.
+
+
+You can select a key part in the summary view, and if you want to share it all you need to do is click a button in the article view for the corresponding text to generate a text fragment link to the original article webpage.
+
+
+
+![A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article.](image.png)
+
+![QuickSum lets you share links to fragments of the original artical](image.png)
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -23,25 +34,55 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them.
 
-```
-Give examples
+- NodeJS
+- pnpm
+- Terminal(powershell, bash, command prompt etc.)
 ```
 
-### Installing
+```
+
+### Development
 
 A step by step series of examples that tell you how to get a development env running.
 
-Say what the step will be
+
+1. Clone repo
+2. In the root of the cloned folder:
+3.
+Install dependencies using pnpm
 
 ```
-Give the example
+pnpm i
 ```
 
-And repeat
+Run dev server using vite
 
 ```
-until finished
+pnpm run dev
 ```
+
+Which should result in
+
+```
+> @ dev C:\Users\avivy\Projects_clean\Svelte\quicksum
+> vite
+
+Pre-bundling dependencies:
+  carbon-components-svelte
+  carbon-icons-svelte/lib/RadioButton20
+  carbon-icons-svelte/lib/ArrowRight32
+  carbon-icons-svelte/lib/Contrast20
+  carbon-icons-svelte/lib/Sun20
+  (...and 1 more)
+(this will be run only when your dependencies or config have changed)
+
+  vite v2.4.4 dev server running at:
+
+  > Local: http://localhost:3000/
+  > Network: use `--host` to expose
+
+  ready in 2762ms.
+  ```
 
 End with an example of getting some data out of the system or using it for a little demo.
 
