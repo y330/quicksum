@@ -86,6 +86,7 @@
 				 nav.length >
 					0 ? nav[0].link : "/"} style="margin-top: 3rem">Jump to quick demo</Button
 				>
+				<p>(Still need to be configured[sometime EST tommorow(08/09)], give or take)</p>
 			</Column>
 		</Row>
 	</Grid>
