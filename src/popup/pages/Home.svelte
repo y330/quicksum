@@ -135,7 +135,7 @@
 			<Column md sm="{breakpoints.sm}" class="my--imagePromo-wrapper">
 				<img
 					class="my--imagePromo"
-					alt="a terminal showing the output of the tree command, output includes a file structure of markdown files"
+					alt="A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article."
 					src=""
 				/>
 			</Column>
@@ -145,7 +145,7 @@
 			<Column md sm="{breakpoints.sm}" class="my--imagePromo-wrapper">
 				<img
 					class="my--imagePromo browser"
-					alt="SveltePress sidebar generated using the previous structure"
+					alt="QuickSum lets you share links to fragments of the original artical"
 					src=""
 				/>
 			</Column>
