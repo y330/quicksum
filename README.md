@@ -1,6 +1,7 @@
 # quicksum
 
 <img src="./src/popup/assets/logo-animated.svg"/>
+
 _Quick article summarization with text fragmentation._
 
 ## Table of Contents
