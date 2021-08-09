@@ -54,7 +54,7 @@
         <h2 class="subTitle">
           <span>Summarization for </span>
           <Typewriter loop={3000} cursor="#ff3e00">
-            {#each use as uses}
+            {#each uses as use}
               <span>{" "}{use}.</span>
             {/each}
           </Typewriter>
@@ -105,7 +105,7 @@
       </Column>
       <Column md sm={breakpoints.sm}>
         <Tile class="my--tile"
-          ><h2 class="tile--title">Copy & paste OR use article URL ;)</h2>
+          ><h2 class="tile--title">Copy & paste OR use article URL</h2>
           <h4>
             Ut excepteur incididunt eiusmod est. Veniam sit veniam do sit
             reprehenderit ea nisi elit sint nostrud lo URL.
