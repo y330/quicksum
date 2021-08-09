@@ -136,7 +136,7 @@
 				<img
 					class="my--imagePromo"
 					alt="a terminal showing the output of the tree command, output includes a file structure of markdown files"
-					src="https://i.imgur.com/JicfVWS.png"
+					src=""
 				/>
 			</Column>
 			<Column md="{1}" sm="{breakpoints.sm}" class="my--line-wrapper">
@@ -146,7 +146,7 @@
 				<img
 					class="my--imagePromo browser"
 					alt="SveltePress sidebar generated using the previous structure"
-					src="https://i.imgur.com/Eiy8q4i.png"
+					src=""
 				/>
 			</Column>
 		</Row>
