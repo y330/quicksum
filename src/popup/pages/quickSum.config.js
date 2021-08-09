@@ -18,6 +18,8 @@ export default {
 			}
 		]
 	},
+	// favicon
+	favicon: './src/popup/assets/images/favicon.ico',
 	// Used in title meta tag
 	title: 'QuickSum',
 	// Sorting method

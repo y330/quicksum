@@ -1,6 +1,6 @@
 <script>
   // Components
-  import { Button, Search } from "carbon-components-svelte";
+  import { Search } from "carbon-components-svelte";
   import Navbar from "./components/Navbar.svelte";
   // Pages
   import Home from "./pages/Home.svelte";

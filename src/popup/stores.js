@@ -1,4 +1,3 @@
-
 import { writable } from 'svelte/store'
 
 // default theme color

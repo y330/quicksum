@@ -1,4 +1,9 @@
 {
+  "name": "quicksum",
+  "author": {
+    "name": "Yonah Aviv"
+  },
+  "description": "Quick summarization with text fragmentation",
   "private": true,
   "scripts": {
     "dev": "vite",

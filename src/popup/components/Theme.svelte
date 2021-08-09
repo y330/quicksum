@@ -119,7 +119,6 @@ c<slot />
   :global(.bx--search-input:hover, [role="search"]:hover, .bx--search:hover) {
     background-color: transparent;
     border: 1px solid var(--cds-ui-04, #8d8d8d);
-
   }
   :global(:root[theme="g10"]) :global(.bx--search-input),
   :global(:root[theme="g10"]) :global([role="search"]),
@@ -138,13 +137,11 @@ c<slot />
 
     border-color: #222222;
     border-bottom-color: transparent;
-
   }
   :global(:root[theme="g10"]) :global([role="search"]:not(:focus):hover),
   :global(:root[theme="white"]) :global([role="search"]:not(:focus):hover) {
     border-color: none;
     background-color: none;
-
   }
 
   :global(.bx--search-input:focus, [role="search"]:focus, .bx--input:focus) {
