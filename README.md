@@ -2,7 +2,7 @@
 
 ## Copyright (c) 2021 Yonah Aviv
 
-<img src="./logo-512x512.png"/>
+<img src="assets/logo-512x512.png"/>
 
 _Quick article summarization with text fragmentation._
 
@@ -24,7 +24,7 @@ You can select a key part in the summary view, and if you want to share it all y
 
 ![A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article.](image.png)
 
-![Home page](Dark_mode-home.png)
+![Home page](assets/Dark_mode-home.png)
 
 ![QuickSum lets you share links to fragments of the original artical](image.png)
 

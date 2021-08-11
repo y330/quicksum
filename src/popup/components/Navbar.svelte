@@ -54,14 +54,18 @@
   let isOpen = false;
 
   export let isSideNavOpen;
-  export let nav=[{
-    link: "https://yonah.ml", name:"My other projects"
-  }];
+  export let nav= [
+			{
+				link: 'https://github.com/y330/quicksum',
+				name: 'GitHub'
+			}
+		]
 </script>
 
-<Header company="Quick" platformName="Summarization" href="/" bind:isSideNavOpen>
+<Header company="Quick" platformName="Sum" href="/" bind:isSideNavOpen>
   <div slot="skip-to-content">
     <SkipToContent />
+
   </div>
 
   <HeaderNav>
@@ -77,6 +81,7 @@
       {/each}
     {/if}
   </HeaderNav>
+
   <HeaderUtilities>
     <Search />
     <div class="my--theme-switcher-button">
@@ -113,6 +118,7 @@
     </div>
   </HeaderUtilities>
 </Header>
+<slot />
 
 <style>
   .my--theme-switcher-button {

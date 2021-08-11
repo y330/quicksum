@@ -13,7 +13,7 @@ export default {
 		overwrite: false,
 		items: [
 			{
-				link: 'https://github.com/y330',
+				link: 'https://github.com/y330/quicksum',
 				name: 'GitHub'
 			}
 		]

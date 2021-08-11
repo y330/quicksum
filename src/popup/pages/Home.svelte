@@ -1,22 +1,11 @@
 <script>
   // UI
-  /* Any UI components go here */
   import Typewriter from "svelte-typewriter";
-  import Logo from "../assets/Logo.svelte";
-  import { Button, Tile, Grid, Row, Column } from "carbon-components-svelte";
-  import ArrowRight32 from "carbon-icons-svelte/lib/ArrowRight32";
-
-  // Svelte
-  /* Any imports from "svelte" go here */
+  import { Button, Tile, Grid, Row, Column, ContentSwitcher, Switch} from "carbon-components-svelte";
   // Assets
-  /* Any asset imports go here */
+  import Logo from "../assets/Logo.svelte";
   // Config
-  /* Configuration goes here */
-  import Config from "./quickSum.config";
-  // Functions
-  /* Any function imports go here */
-  // Exports
-  /* Component paramters go here */
+  import Config from "../quickSum.config";
   /*-------------------------------*/
   // main page should be as self-contained as possible
   // to minimize internal project dependencies for easier maintaineance
@@ -26,8 +15,7 @@
   const breakpoints = {
     sm: 8,
   };
-  //
-  let uses = ["articles", "research papers", "blog posts", "essays", "You"];
+  let uses = ["articles", "blog posts", "essays", "You"];
 </script>
 
 <svelte:head>
@@ -51,27 +39,23 @@
           />
         </svg>
         <h1 style="margin-top: 1rem;">Welcome to QuickSum</h1>
-        <h2 class="subTitle">
+        <h3 class="sub-title">
           <span>Summarization for </span>
           <Typewriter loop={3000} cursor="#ff3e00">
             {#each uses as use}
               <span>{" "}{use}.</span>
             {/each}
           </Typewriter>
-        </h2>
-        <Button
-          icon={ArrowRight32}
-          size="lg"
-          href={nav.length > 0 ? nav[0].link : "/"}
-          style="margin-top: 3rem">Jump to quick demo</Button
-        >
-        <p>
-          (Still need to be configured[sometime EST tommorow(08/09)], give or
-          take)
+        </h3>
+                <slot name="demoButton"></slot>
+
+                <p>
+fml my computer is slow af
         </p>
       </Column>
     </Row>
   </Grid>
+  <slot name="tabs"></slot>
   <Grid padding condensed class="my--grid">
     <Row>
       <Column md sm={breakpoints.sm}>
@@ -120,7 +104,7 @@
         <img
           class="my--imagePromo"
           alt="A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article."
-          src=""
+          src="../../../assets/demo2.png"
         />
       </Column>
       <Column md={1} sm={breakpoints.sm} class="my--line-wrapper">
@@ -130,13 +114,16 @@
         <img
           class="my--imagePromo browser"
           alt="QuickSum lets you share links to fragments of the original artical"
-          src=""
+          src="../../../assets/demo1.png"
         />
       </Column>
     </Row>
   </Grid>
+
+
   <footer>
-    &copy;⃠ 2021{currentYear === 2021 ? "" : " - " + currentYear} -
+
+    &copy; 2021{currentYear === 2021 ? "" : " - " + currentYear} -
     <a class="my--link" href="https://yonah.ml/">Yonah Aviv</a>
   </footer>
 </div>
@@ -180,9 +167,9 @@
     text-decoration: none;
   }
   .main {
-    margin-top: 6rem;
+    margin-top: 0rem;
   }
-  .subTitle {
+  .sub-title {
     flex-direction: column;
     display: flex;
     margin-top: 1rem;

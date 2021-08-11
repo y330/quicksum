@@ -38,6 +38,7 @@ c<slot />
   }
   :global(button, select, input, textarea) {
     border-radius: 10px;
+
     outline: none !important;
   }
 
@@ -54,7 +55,7 @@ c<slot />
     background-color: var(--cds-button-primary-hover);
   }
   :global(.bx--btn--primary:focus:active) {
-    transform: scale(0.92);
+    transform: scale(0.95);
   }
   :global(.bx--btn--primary:focus:active:not(:hover), .bx--btn--primary:focus:hover) {
     background-color: var(--cds-focus);
@@ -91,14 +92,14 @@ c<slot />
 
   /*------------------------------*/
   /*----------------------------*/
-  :global(.bx--search-input, .bx--input, [role="search"]) {
+  :global(.bx--search-input, .bx--input, [role="search"], .bx--text-area) {
     outline: none !important;
     border: 1px solid transparent;
     border-color: transparent;
     border-bottom: 1px solid var(--cds-ui-04, #8d8d8d);
     border-radius: 10px;
     transition-duration: 300ms;
-    transition-property: background-color, border, border-radius;
+    transition-property: background-color, border-color, border-radius;
     transition: background-color 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
       border-color 230ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
       border-radius 230ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -116,7 +117,7 @@ c<slot />
     border: none !important;
     border-bottom: 1px solid var(--cds-ui-04, #8d8d8d);
   }
-  :global(.bx--search-input:hover, [role="search"]:hover, .bx--search:hover) {
+  :global(.bx--search-input:hover, [role="search"]:hover, .bx--search:hover .bx--text-area:hover) {
     background-color: transparent;
     border: 1px solid var(--cds-ui-04, #8d8d8d);
   }
@@ -144,7 +145,7 @@ c<slot />
     background-color: none;
   }
 
-  :global(.bx--search-input:focus, [role="search"]:focus, .bx--input:focus) {
+  :global(.bx--search-input:focus, [role="search"]:focus, .bx--input:focus, .bx--text-area:focus) {
     border: 2px solid var(--cds-focus);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -177,5 +178,28 @@ c<slot />
 
   :global(.bx--search-close::before, .bx--search-button::before) {
     display: none;
+  }
+  /*-------------------------*/
+  /*-------------------------*/
+  /*-------------------------*/
+  /*-------------------------*/
+  :global(.bx--tabs__nav-item) {
+    /* width: fit-content !important; */
+  }
+  :global(.bx--tabs__nav-link) {
+    outline: none !important;
+    border-radius: 5px !important;
+    border: 2px solid white !important;
+    /* border-width: 2px !important; */
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  :global(.bx--tabs__nav-item .bx--tabs__nav-link:hover) {
+    border-color: #e444 !important;
+  }
+  :global(.bx--tabs__nav-item--selected .bx--tabs__nav-link) {
+    background-color: var(--cds-focus);
+    color: white !important;
+    border: 2px var(--cds-button-primary-active) solid;
   }
 </style>
