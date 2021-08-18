@@ -2,12 +2,13 @@
   import {
     Button,
     TextArea,
+    CopyButton,
     Grid,
     Row,
     Column,
   } from "carbon-components-svelte";
   import { onMount } from "svelte";
-  import { fade } from "svelte/transition";
+  import { fade, slide } from "svelte/transition";
   type Summary = {
     summary: string;
   };
@@ -31,7 +32,13 @@
   onMount(fetchSummary);
 </script>
 
-<TextArea bind:value={article} />
+<TextArea
+  class="dark-mode scroll__"
+  bind:value={article}
+  placeholder="Hey there 👋! Want to summarize some text? Paste it here"
+/>
+<br />
+<br />
 <Button
   on:click={() => {
     fetchSummary();
@@ -51,7 +58,14 @@
       <div>
         {#await summarize then res}
           {#if res}
-            <p in:fade={{ duration: 500 }}>{res.summary}</p>
+            <h2>Summary</h2>
+            <div in:slide={{ duration: 200 }}>🎉</div>
+            <p in:fade={{ duration: 500 }}>
+              {res.summary === undefined
+                ? "No text to summarize 😝"
+                : res.summary}
+            </p>
+            <CopyButton text={res.summary} />
           {/if}
         {:catch err}
           <p>{err.message}. Word.</p>
