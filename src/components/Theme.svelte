@@ -51,15 +51,26 @@
     border-width: 2px !important;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
+  :global(.bx--btn--ghost) {
+    border-width: 1px !important;
+    color: var(--cds-button-primary) !important;
+  }
+  :global(.bx--btn--ghost:hover) {
+    color: var(--cds-button-primary-hover) !important;
+  }
   :global(.bx--btn--primary:hover) {
     background-color: var(--cds-button-primary-hover);
   }
-  :global(.bx--btn--primary:focus:active) {
+  :global(.bx--btn--primary:focus:active, .bx--btn--ghost:focus:active) {
     transform: scale(0.95);
   }
   :global(.bx--btn--primary:focus:active:not(:hover), .bx--btn--primary:focus:hover) {
     background-color: var(--cds-focus);
+
     border: 2px var(--cds-button-primary-active) solid;
+  }
+  :global(.bx--btn--ghost:focus:active:not(:hover), .bx--btn--ghost:focus:hover) {
+    background-color: var(--cds-body-long-02-line-height)
   }
 
 

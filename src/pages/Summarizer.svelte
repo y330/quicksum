@@ -7,20 +7,22 @@
     Row,
     Column,
     SkeletonText,
+    NumberInput,
   } from "carbon-components-svelte";
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { article } from "../stores";
+  import { article, demo_article } from "../stores";
   type Summary = {
     summary: string;
   };
   const SUMMARY_API = process.env.SUMMARY_API as string;
   $article = "";
   let showOriginal: boolean = false;
+  let numSentences: number = 5;
   let summarize: Promise<Summary> | undefined = undefined;
   const fetchSummary = () => {
     summarize = fetch(
-      `${SUMMARY_API}?num_sentences=5&algorithm=gmm &min_length=40&max_length=400`,
+      `${SUMMARY_API}?num_sentences=${numSentences}&algorithm=gmm &min_length=40&max_length=400`,
       {
         method: "POST",
         body: `${$article}`,
@@ -35,19 +37,26 @@
 </script>
 
 <TextArea
+  heigh20vh";
   class="dark-mode scroll__"
   bind:value={$article}
   placeholder="Hey there 👋! Want to summarize some text? Paste it here"
 />
 <br />
 <br />
+
+<Button
+  kind="ghost"
+  on:click={() => {
+    $article = $demo_article;
+  }}>Load example</Button
+>
 <Button
   on:click={() => {
     fetchSummary();
     showOriginal = !showOriginal;
   }}>Summarize</Button
 >
-
 <Grid>
   <Row>
     <Column>
@@ -61,6 +70,15 @@
         {#await summarize then res}
           {#if res}
             <h2>Summary</h2>
+            <NumberInput
+              min={4}
+              max={20}
+              bind:value={numSentences}
+              invalidText="Number must be between 4 and 20."
+              helperText="Changing the amount of sentences in the output allows refining the granuality of the result with relation to the input. This information is not essential for summarizing"
+              label="Number of sentences (4 min, 20 max)"
+            />
+
             <div>
               {#if res.summary === undefined}
                 No text to summarize 😝
