@@ -2,9 +2,9 @@
 
 ## Copyright (c) 2021 Yonah Aviv
 
-<img src="assets/logo-512x512.png"/>
+<img src="src/assets/logo=animated.svg"/>
 
-_Quick article summarization with text fragmentation(coming soon)._
+_Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
 ## Table of Contents
 
