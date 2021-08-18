@@ -22,7 +22,7 @@
   let summarize: Promise<Summary> | undefined = undefined;
   const fetchSummary = () => {
     summarize = fetch(
-      `${SUMMARY_API}?num_sentences=${numSentences}&algorithm=gmm &min_length=40&max_length=400`,
+      `${SUMMARY_API}?num_sentences=${numSentences}&algorithm=gmm &min_length=40&max_length=600`,
       {
         method: "POST",
         body: `${$article}`,
