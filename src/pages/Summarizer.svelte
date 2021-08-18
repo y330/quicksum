@@ -37,7 +37,7 @@
 </script>
 
 <TextArea
-  heigh20vh";
+  rows={8}
   class="dark-mode scroll__"
   bind:value={$article}
   placeholder="Hey there 👋! Want to summarize some text? Paste it here"
@@ -45,19 +45,34 @@
 <br />
 <br />
 
-<Button
-  kind="ghost"
-  on:click={() => {
-    $article = $demo_article;
-  }}>Load example</Button
->
-<Button
-  on:click={() => {
-    fetchSummary();
-    showOriginal = !showOriginal;
-  }}>Summarize</Button
->
 <Grid>
+  <Row>
+    <Column>
+      <NumberInput
+      size="xl"
+      min={4}
+      max={20}
+      bind:value={numSentences}
+      invalidText="Number must be between 4 and 20."
+      helperText="Increaing the amount of sentences in summary allows for more contextual results, at the cost of precision."
+      label="Number of sentences (4 min, 20 max)"
+    />
+    </Column>
+    <Column>
+      <Button
+        kind="ghost"
+        on:click={() => {
+          $article = $demo_article;
+        }}>Load example</Button
+      >
+      <Button
+        on:click={() => {
+          fetchSummary();
+          showOriginal = !showOriginal;
+        }}>Summarize</Button
+      >
+    </Column>
+  </Row>
   <Row>
     <Column>
       {#if showOriginal}
@@ -67,18 +82,10 @@
     </Column>
     <Column>
       <div>
+
         {#await summarize then res}
           {#if res}
             <h2>Summary</h2>
-            <NumberInput
-              min={4}
-              max={20}
-              bind:value={numSentences}
-              invalidText="Number must be between 4 and 20."
-              helperText="Changing the amount of sentences in the output allows refining the granuality of the result with relation to the input. This information is not essential for summarizing"
-              label="Number of sentences (4 min, 20 max)"
-            />
-
             <div>
               {#if res.summary === undefined}
                 No text to summarize 😝

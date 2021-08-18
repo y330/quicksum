@@ -84,13 +84,9 @@
 
   <Search />
   <HeaderUtilities>
-
-
     <!--*typescript-ignore-->
 
-
     <div class="qs--theme-switcher-button">
-
       <Button
         iconDescription="Toggle Contrast"
         icon={contrastIcon}
@@ -120,7 +116,6 @@
             >Toggle Theme</HeaderPanelLink
           >
         </HeaderPanelLinks>
-
       </HeaderAction>
     </div>
   </HeaderUtilities>
@@ -143,13 +138,21 @@
       display: none;
     }
   }
-  @media only screen and (max-width: 512px) {
-    :global([slot="tabs"]){
+  @media only screen and (max-width: 425px) {
+    :global([slot="tabs"]) {
       display: flex;
-      flex-grow:10;
+      flex-direction: column;
+      width: fit-content !important;
+
+      flex-grow: 0 !important;
+    }
+    :global(.bx--tabs__nav-item) {
+      width: fit-content !important;
+      flex-grow: 0 !important;
+      flex-shrink: 10;
     }
     :global(.spacer) {
-      width: 25%;
+      /* width: 25%; */
     }
   }
 </style>
