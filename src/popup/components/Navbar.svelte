@@ -123,7 +123,7 @@
 <style>
   .my--theme-switcher-button {
     display: none;
-	margin-inline: 0.5em !important;
+	  margin-inline: 0.5em !important;
 
   }
   .my--app-menu {

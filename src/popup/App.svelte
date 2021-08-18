@@ -38,13 +38,11 @@
               style="margin-top: 3rem">Jump to quick demo</Button
             >
           </div>
-        </Home></TabContent
-      >
+        </Home>
+      </TabContent>
       <TabContent>
         <div>
-        <Summarizer />
-
-
+          <Summarizer />
         </div>
       </TabContent>
     </div>
