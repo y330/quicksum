@@ -5,7 +5,7 @@ const { mode } = require('webpack-nano/argv')
 
 const common = merge([
   { output: { path: path.resolve(process.cwd(), 'dist') } },
-  parts.page({ title: 'Quicksum' }),
+  parts.page({ title: 'Quicksum'  }),
   parts.loadSvg(),
   parts.svelte(mode),
   parts.extractCSS({ loaders: [parts.postcss()] }),

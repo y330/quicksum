@@ -1,9 +1,9 @@
 <script>
 	// UI
 	import Typewriter from "svelte-typewriter";
-	import { Button, Tile, Grid, Row, Column, ContentSwitcher, Switch} from "carbon-components-svelte";
+	import { Tile, Grid, Row, Column, ContentSwitcher, Switch} from "carbon-components-svelte";
 	// Assets
-	import Logo from "../assets/Logo.svelte";
+	// import Logo from "../assets/Logo.svelte";
 	import InlineSVG from 'svelte-inline-svg';
 	import logo from "../assets/logo-animated.svg";
 	// Config

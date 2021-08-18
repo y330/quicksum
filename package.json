@@ -44,6 +44,5 @@
     "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
-    "carbon-icons-svelte": "^10.36.0"
-  }
+    "carbon-icons-svelte": "^10.36.0" }
 }

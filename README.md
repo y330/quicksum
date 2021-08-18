@@ -2,7 +2,7 @@
 
 ## Copyright (c) 2021 Yonah Aviv
 
-<img src="src/assets/logo=animated.svg"/>
+<img src="src/assets/logo-animated.svg"/>
 
 _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
@@ -63,7 +63,7 @@ Run dev server using webpack
 ```
 pnpm run start
 ```
-  
+
 ```navigate to localhost:3000
 ```
 - Live reloading still needs to be added****

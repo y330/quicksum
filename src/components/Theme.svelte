@@ -21,7 +21,7 @@
   });
 </script>
 
-c<slot />
+<slot />
 
 <style>
   :global(:root),
