@@ -1,7 +1,6 @@
 <script>
 	export let d;
 </script>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="eFizZ6srheL1" viewBox="0 0 98.4 118.3" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
 
 <defs>
 	<linearGradient id="eFizZ6srheL9-stroke" x1="0" y1="0.5" x2="1" y2="0.5" spreadMethod="pad" gradientUnits="objectBoundingBox">
@@ -22,10 +21,9 @@
 	</g>
 </g>
 
-</svg>
 <style>
 	#eFizZ6srheL2 {
-		animation: eFizZ6srheL2_c_o 3000ms linear 1 normal forwards
+		animation: eFizZ6srheL2_c_o 3000 linear 1 normal forwards
 	}
 
 	@keyframes eFizZ6srheL2_c_o {

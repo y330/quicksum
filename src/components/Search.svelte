@@ -1,7 +1,8 @@
 <script>
+  import { article } from "../stores";
   import { HeaderSearch } from "carbon-components-svelte";
   export let value;
-  export let results;
+  export let results = {id:1, name:"test",description: $article};
   export let selectedHref = "";
 </script>
 
@@ -13,3 +14,5 @@
     selectedHref = e.detail.selectedResult.href;
   }}
 />
+{selectedHref}
+

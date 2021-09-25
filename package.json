@@ -1,26 +1,48 @@
 {
-  "name": "quicksum",
-  "author": {
-    "name": "Yonah Aviv"
-  },
-  "description": "Quick summarization with text fragmentation",
-  "private": true,
+  "name": "quicksum-svelte-webpack",
+  "version": "1.0.0",
+  "description": "Quick summarization with integrated support for generating text fragments",
+  "author": "Yonah Aviv",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "build": "wp --config config/webpack.config.js --mode production",
+    "build:analyze": "wp --config config/webpack.config.js --mode production --analyze",
+    "start": "wp --config config/webpack.config.js --mode development"
   },
+  "keywords": [
+    "svelte",
+    "webpack",
+    "quicksum",
+    "summarization"
+  ],
+  "license": "MIT",
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "next",
-    "carbon-components-svelte": "^0.41.0",
-    "carbon-preprocess-svelte": "^0.6.0",
-    "svelte": "^3.38.2",
-    "svelte-hmr": "^0.14.4",
+    "@tsconfig/svelte": "^2.0.1",
+    "autoprefixer": "^10.3.1",
+    "carbon-components-svelte": "^0.42.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "dotenv-webpack": "^7.0.3",
+    "esbuild-loader": "^2.15.0",
+    "mini-css-extract-plugin": "^2.2.0",
+    "mini-html-webpack-plugin": "^3.1.3",
+    "postcss": "^8.3.6",
+    "postcss-load-config": "^3.1.0",
+    "postcss-loader": "^6.1.1",
+    "svelte": "^3.42.1",
+    "svelte-inline-svg": "^1.0.8",
+    "svelte-loader": "^3.1.2",
+    "svelte-preprocess": "^4.7.4",
     "svelte-typewriter": "^2.4.5",
-    "vite": "^2.3.7"
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-nano": "^1.1.1",
+    "webpack-plugin-serve": "^1.5.0",
+    "webpackbar": "^5.0.0-3"
   },
   "dependencies": {
-    "carbon-icons-svelte": "^10.36.0",
-    "node-summarizer": "^1.0.7",
-    "text-summary": "^2.0.4"
-  }
+    "carbon-icons-svelte": "^10.36.0" }
 }

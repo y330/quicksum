@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import {
     Header,
     HeaderNav,
@@ -12,9 +12,8 @@
     HeaderPanelLinks,
     HeaderPanelLink,
   } from "carbon-components-svelte";
-  import Search from "./Search.svelte";
   import { theme } from "../stores";
-
+  import Search from "./Search.svelte";
   import RadioButton20 from "carbon-icons-svelte/lib/RadioButton20";
   import Contrast20 from "carbon-icons-svelte/lib/Contrast20";
   import Sun20 from "carbon-icons-svelte/lib/Sun20";
@@ -54,18 +53,17 @@
   let isOpen = false;
 
   export let isSideNavOpen;
-  export let nav= [
-			{
-				link: 'https://github.com/y330/quicksum',
-				name: 'GitHub'
-			}
-		]
+  export let nav = [
+    {
+      link: "https://github.com/y330/quicksum",
+      name: "GitHub",
+    },
+  ];
 </script>
 
 <Header company="Quick" platformName="Sum" href="/" bind:isSideNavOpen>
   <div slot="skip-to-content">
     <SkipToContent />
-
   </div>
 
   <HeaderNav>
@@ -81,10 +79,14 @@
       {/each}
     {/if}
   </HeaderNav>
+  <slot />
+  <slot name="tabs" />
 
+  <Search />
   <HeaderUtilities>
-    <Search />
-    <div class="my--theme-switcher-button">
+    <!--*typescript-ignore-->
+
+    <div class="qs--theme-switcher-button">
       <Button
         iconDescription="Toggle Contrast"
         icon={contrastIcon}
@@ -99,7 +101,7 @@
         tooltipAlignment="end"
       />
     </div>
-    <div class="my--app-menu">
+    <div class="qs--app-menu">
       <HeaderAction bind:isOpen>
         <HeaderPanelLinks>
           {#each nav as navItem}
@@ -118,24 +120,39 @@
     </div>
   </HeaderUtilities>
 </Header>
-<slot />
 
 <style>
-  .my--theme-switcher-button {
+  .qs--theme-switcher-button {
     display: none;
-	  margin-inline: 0.5em !important;
-
+    margin-inline: 0.5em !important;
   }
-  .my--app-menu {
+  .qs--app-menu {
     display: inline-flex;
   }
 
   @media only screen and (min-width: 1056px) {
-    .my--theme-switcher-button {
+    .qs--theme-switcher-button {
       display: inline-flex;
     }
-    .my--app-menu {
+    .qs--app-menu {
       display: none;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    :global([slot="tabs"]) {
+      display: flex;
+      flex-direction: column;
+      width: fit-content !important;
+
+      flex-grow: 0 !important;
+    }
+    :global(.bx--tabs__nav-item) {
+      width: fit-content !important;
+      flex-grow: 0 !important;
+      flex-shrink: 10;
+    }
+    :global(.spacer) {
+      /* width: 25%; */
     }
   }
 </style>
