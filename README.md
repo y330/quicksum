@@ -1,8 +1,8 @@
 # quicksum
 
-## Copyright (c) 2021 Yonah Aviv
-
-<img src="https://github.com/y330/quicksum/blob/version-2/src/assets/logo-animated.svg"/>
+Yonah Aviv
+=======
+<img src="https://github.com/y330/quicksum/blob/master/src/popup/assets/logo-animated.svg"/>
 
 _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
@@ -17,9 +17,6 @@ _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
 Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate a summary of it for you. Coded using Svelte
 
-
-
-
 - Currently only pasting the actual text in the textarea will work, meaning no URLs.
 
 (the following is a WIP)
@@ -28,6 +25,13 @@ Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate 
 ![Home page](assets/Dark_mode-home.png)
 
 ![QuickSum lets you share links to fragments of the original artical](image.png)
+
+Features: 
+- Webpack
+- Svelte
+- Carbon design
+- TypeScript
+- PostCSS
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -73,3 +77,6 @@ End with an example of getting some data out of the system or using it for a lit
 ## Usage <a name = "usage"></a>
 
 Add notes about how to use the system.
+
+
+## Copyright (c) 2021 Yonah Aviv
