@@ -2,7 +2,7 @@
 
 ## Copyright (c) 2021 Yonah Aviv
 
-<img src="src/assets/logo-animated.svg"/>
+<img src="https://github.com/y330/quicksum/blob/version-2/src/assets/logo-animated.svg"/>
 
 _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
@@ -15,12 +15,12 @@ _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
 ## About <a name = "about"></a>
 
-Paste an article URL or a body of text, and we will generate a summary for you, clean and simple.
+Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate a summary of it for you. Coded using Svelte
 
 
-You can select a key part in the summary view, and if you want to share it all you need to do is click a button in the article view for the corresponding text to generate a text fragment link to the original article webpage.
 
-- Currently only pasting the actualt text in the textarea will work, meaning no URLs.
+
+- Currently only pasting the actual text in the textarea will work, meaning no URLs.
 
 (the following is a WIP)
 ![A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article.](image.png)
