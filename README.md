@@ -19,12 +19,9 @@ Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate 
 
 - Currently only pasting the actual text in the textarea will work, meaning no URLs.
 
-(the following is a WIP)
-![A side by side view of summary to article, allowing you to click on a highlighted part of the summary and the model will attempt to map it to the best match within the original article.](image.png)
+![summarizer screenshot.](quicksum-ss.png)
 
-![Home page](assets/Dark_mode-home.png)
 
-![QuickSum lets you share links to fragments of the original artical](image.png)
 
 Features: 
 - Webpack
