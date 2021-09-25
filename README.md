@@ -15,10 +15,8 @@ _Quick article summarization with text fragmentation._
 
 ## About <a name = "about"></a>
 
-Paste an article URL or a body of text, and we will generate a summary for you, clean and simple. For the curious, we also map out each part of the summary to it's original place in the article.
+Paste an article URL or a body of text, and we will generate a summary for you, clean and simple.
 
-
-You can select a key part in the summary view, and if you want to share it all you need to do is click a button in the article view for the corresponding text to generate a text fragment link to the original article webpage.
 
 
 
