@@ -4,7 +4,7 @@
 
 <img src="assets/logo-512x512.png"/>
 
-_Quick article summarization with text fragmentation._
+_Quick article summarization._
 
 ## Table of Contents
 
@@ -15,8 +15,7 @@ _Quick article summarization with text fragmentation._
 
 ## About <a name = "about"></a>
 
-Paste an article URL or a body of text, and we will generate a summary for you, clean and simple.
-
+Paste a body of text (i.e., an article, essay, etc.) and QuickSum will generate a summary of it for you. Coded using Svelte
 
 
 
