@@ -2,7 +2,7 @@
 
 Yonah Aviv
 =======
-<img src="https://github.com/y330/quicksum/blob/master/src/assets/logo-animated.svg"/>
+<img src="https://github.com/y330/quicksum/blob/master/src/assets/logo-animated.svg" height="150em"/>
 
 _Quick article summarization(try it now!) with text fragmentation(coming soon)._
 
