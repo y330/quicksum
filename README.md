@@ -2,7 +2,7 @@
 
 ## Copyright (c) 2021 Yonah Aviv
 
-<img src="assets/logo-512x512.png"/>
+<img src="https://github.com/y330/quicksum/blob/master/src/popup/assets/logo-animated.svg"/>
 
 _Quick article summarization._
 
