@@ -53,9 +53,7 @@
 		  </h3>
 				  <slot name="demoButton"></slot>
 
-				  <p>
-  fml my computer is slow af
-		  </p>
+				  
 		</Column>
 	  </Row>
 	</Grid>
